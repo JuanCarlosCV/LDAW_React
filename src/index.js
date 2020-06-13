@@ -23,6 +23,7 @@ class Board extends React.Component {
   render() {
     return (
       <div className="board">
+      <h3>Juan Carlos Cabrera Vega A01702008</h3>
         <div className="board-row">
           {this.renderSquare(0)}
           {this.renderSquare(1)}
@@ -94,7 +95,7 @@ class Game extends React.Component {
         'Go to game start';
       return (
         <li key={move}>
-          <button onClick={() => this.jumpTo(move)}>{desc}</button>
+          <button class="button button2"onClick={() => this.jumpTo(move)}>{desc}</button>
         </li>
       );
     });
